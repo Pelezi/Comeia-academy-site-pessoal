@@ -1,0 +1,105 @@
+.info {
+    margin: 50px;
+    border-radius: 25px;
+    background-color: #EBEDFF;
+}
+
+.contact {
+    text-align: left;
+    width: 45%;
+    background-color: #1E2BA3;
+    padding: 20px;
+    border-radius: 25px 0px 0px 25px;
+    color: #EBEDFF;
+    display: inline-block;
+}
+
+.socialmedia {
+    width: 45%;
+    padding: 20px;
+    color: #000C7A;
+    display: inline-block;
+    background-color: #EBEDFF;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.socialmedia img {
+    width: 40px;
+}
+
+.icons {
+    overflow: hidden;
+    text-align: left;
+    margin: 39px auto;
+}
+
+.icons img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.icons a {
+    color: #000C7A;
+
+}
+
+.at {
+    font-size: large;
+    display: inline-block;
+    vertical-align:middle;
+    text-align: left;
+    text-decoration: none;
+}
+
+.at p {
+    margin: 0px 0px 0px 10px;
+}
+
+.at small {
+    margin: 0px 0px 0px 30px;
+}
+
+form fieldset {
+    border: 0px;
+}
+
+form fieldset label {
+    display: block;
+}
+
+form fieldset input {
+    width: 100%;
+}
+
+form fieldset input, textarea {
+    width: 100%;
+}
+
+form {
+    height: 100%;
+}
+
+.button {
+    border: 0;
+    background-color: #E8F7FF;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ceedfd;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact, .socialmedia {
+        width: 90%;
+        border-radius: 25px;
+    }
+
+    .info {
+        background-color: white;
+    }
+    
+}

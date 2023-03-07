@@ -1,0 +1,144 @@
+body {
+    font-family: "Montserrat", "Arial";
+    margin: 0;
+    color: #000C7A;
+}
+
+
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav a{
+    display: block;
+    float: left;
+    color: #EBEDFF;
+    text-align: center;
+    padding: 20px 32px;
+    text-decoration: none;
+}
+
+.topnav a:hover:not(.logo) {
+    background-color: #000747;
+}
+
+.active {
+    background-color: #000747;
+}
+
+.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .right, .topnav a, .topnav li {float: none;}
+    
+}
+
+header, footer {
+    background-color: #000C7A;
+    color: #EBEDFF;
+}
+
+.bio img {
+    height: 250px;
+    border-radius: 50%;
+    padding: 10px 20px 10px 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.bio {
+    padding: 50px;
+    background-color: #E8F7FF;
+    overflow: hidden;
+    text-align: center;
+}
+
+.realbio {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+section {
+    margin: 50px;
+    padding: 30px;
+    background-color: #E8F7FF;
+    border-radius: 50px;
+    color: #000C7A;
+    clear: both;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0px;
+}
+
+@media screen and (max-width: 450px) {
+    footer p {margin: 10px;}
+    
+}
+
+h1 {
+    font-family: "Montserrat", "Arial";
+    font-weight: bold;
+}
+
+
+
+/*Montserrat SemiBold*/
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Montserrat-SemiBold.ttf);
+    src: url(../assets/Montserrat-SemiBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Montserrat SemiBold italic*/
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Montserrat-SemiBoldItalic.ttf);
+    src: url(../assets/Montserrat-SemiBoldItalic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Montserrat Bold*/
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Montserrat-Bold.ttf);
+    src: url(../assets/Montserrat-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*Montserrat Bold Italic*/
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Montserrat-BoldItalic.ttf);
+    src: url(../assets/Montserrat-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Beyond;
+    src: url(../assets/beyond_the_mountains.ttf);
+    src: url(../assets/beyond_the_mountains.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
