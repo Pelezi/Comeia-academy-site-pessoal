@@ -56,3 +56,45 @@ const mascaraTelefone = (value) => {
     value = value.replace(/(\d)(\d{4})$/,"$1-$2")
     return value
 }
+
+function themeswitch(){
+    console.log(`themeswitch`);
+    const pageBody = document.querySelector('body');
+    const bio = pageBody.querySelector('.bio');
+    const info = pageBody.querySelector('.info');
+    const socialMedia = pageBody.querySelector('.socialmedia');
+    const sections = pageBody.querySelectorAll('section');
+    const portfolio = pageBody.querySelectorAll('.item-portfolio');
+    
+
+    if(!document.getElementById('checkboxdarkmode').checked){
+        pageBody.classList.add('darkmode');
+        bio.classList.add('darkmode');
+        info.classList.add('darkmode');
+        socialMedia.classList.add('darkmode');
+
+        sections.forEach(section => {
+                section.classList.add('darkmode');
+        });
+
+        portfolio.forEach(div => {
+            div.classList.add('darkmode');
+        });
+
+    }else{
+        console.log(`else`);
+        pageBody.classList.remove('darkmode');
+        bio.classList.remove('darkmode');
+        info.classList.remove('darkmode');
+        socialMedia.classList.remove('darkmode');
+
+        sections.forEach(section => {
+            section.classList.remove('darkmode');
+        });
+
+        portfolio.forEach(div => {
+        div.classList.remove('darkmode');
+        });
+
+    }
+}

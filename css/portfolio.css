@@ -3,6 +3,7 @@ main {
 }
 
 .item-portfolio {
+    transition: 0.5s;
     border: 1px solid #E8F7FF;
     margin: 25px;
     display: inline-block;
@@ -19,6 +20,7 @@ main {
 }
 
 .item-portfolio a {
+    transition: 0.5s;
     text-decoration: none;
     color: #000C7A;
 }
@@ -30,6 +32,14 @@ main {
 .item-portfolio small {
     display:inline-block;
     text-align: left;
+}
+
+.darkmode {
+    border: 1px solid black;
+}
+
+.darkmode a {
+    color: #E8F7FF;
 }
 
 @media screen and (max-width: 600px) {
