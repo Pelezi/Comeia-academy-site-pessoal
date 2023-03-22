@@ -41,21 +41,22 @@
 
             <div class="info">
                     <div class="contact">
-                        <form action="">
+                        <form onsubmit="event.preventDefault()">
                             <h3 style="text-align: center;">Me mande uma mensagem</h3>
+
                             <fieldset>
                                 <label for="input-home">Nome</label>
-                                <input type="text" name="input-nome" id="input-nome">
+                                <input type="text" name="input-nome" id="input-nome" required minlength="2" oninput="validarFormulario()">
                             </fieldset>
 
                             <fieldset>
                                 <label for="input-email">E-mail</label>
-                                <input type="email" name="input-email" id="input-email">
+                                <input type="email" name="input-email" id="input-email" required oninput="validarFormulario()">
                             </fieldset>
 
                             <fieldset>
                                 <label for="input-tel">Telefone</label>
-                                <input type="tel" name="input-tel" id="input-tel" placeholder="(xx) x xxxx-xxxx" >
+                                <input type="tel" name="input-tel" id="input-tel" placeholder="(xx) xxxxx-xxxx" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxlength="15" onkeyup="numeroTelefone(event); validarFormulario()">
                             </fieldset>
 
                             <fieldset>
@@ -63,7 +64,7 @@
                             <textarea name="input-message" id="input-message" cols="10" rows="25"></textarea>
                             </fieldset>
                             <center>
-                                <input type="submit" value="enviar" class="button">
+                                <input type="submit" value="enviar" class="button" onclick="enviarFormulario()">
                             </center>
                             
                         </form>
@@ -137,4 +138,5 @@
             </p>
         </footer>
     </body>
+    <script src="../script/sript.js"></script>
 </html>

@@ -70,12 +70,13 @@ header, footer {
 }
 
 section {
-    margin: 50px;
+    margin: 50px auto;
     padding: 30px;
     background-color: #E8F7FF;
     border-radius: 50px;
     color: #000C7A;
     clear: both;
+    width: 40%;
 }
 
 footer {
@@ -95,6 +96,13 @@ footer p {
 h1 {
     font-family: "Montserrat", "Arial";
     font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        width: auto;
+        margin: 50px;
+    }
 }
 
 

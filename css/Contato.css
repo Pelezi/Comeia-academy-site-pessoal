@@ -79,6 +79,14 @@ form {
     height: 100%;
 }
 
+input:focus {
+    outline: none;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
 .button {
     border: 0;
     background-color: #E8F7FF;
