@@ -58,7 +58,6 @@ const mascaraTelefone = (value) => {
 }
 
 function themeswitch(){
-    console.log(`themeswitch`);
     const pageBody = document.querySelector('body');
     const bio = pageBody.querySelector('.bio');
     const info = pageBody.querySelector('.info');
@@ -70,31 +69,44 @@ function themeswitch(){
     if(!document.getElementById('checkboxdarkmode').checked){
         pageBody.classList.add('darkmode');
         bio.classList.add('darkmode');
-        info.classList.add('darkmode');
-        socialMedia.classList.add('darkmode');
 
-        sections.forEach(section => {
+        if(sections != null){
+            sections.forEach(section => {
                 section.classList.add('darkmode');
-        });
+            });
+        }        
 
-        portfolio.forEach(div => {
-            div.classList.add('darkmode');
-        });
+        if(info != null){
+            info.classList.add('darkmode');
+            socialMedia.classList.add('darkmode');
+        }
+
+        if(portfolio != null){
+            portfolio.forEach(div => {
+                div.classList.add('darkmode');
+            });
+        }
 
     }else{
-        console.log(`else`);
         pageBody.classList.remove('darkmode');
         bio.classList.remove('darkmode');
-        info.classList.remove('darkmode');
-        socialMedia.classList.remove('darkmode');
 
-        sections.forEach(section => {
-            section.classList.remove('darkmode');
-        });
+        if(sections != null){
+            sections.forEach(section => {
+                section.classList.remove('darkmode');
+            });
+        }
 
-        portfolio.forEach(div => {
-        div.classList.remove('darkmode');
-        });
+        if(info != null){
+            info.classList.remove('darkmode');
+            socialMedia.classList.remove('darkmode');
+        }
+
+        if(portfolio != null){
+            portfolio.forEach(div => {
+                div.classList.remove('darkmode');
+            });
+        }
 
     }
 }
