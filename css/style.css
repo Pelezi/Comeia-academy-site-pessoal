@@ -6,6 +6,35 @@ body {
     background-color: white;
 }
 
+header, footer {
+    background-color: #000C7A;
+    color: #EBEDFF;
+}
+
+section {
+    transition: 0.5s;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #E8F7FF;
+    border-radius: 50px;
+    color: #000C7A;
+    clear: both;
+    width: 40%;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0px;
+}
+
+h1 {
+    font-family: "Montserrat", "Arial";
+    font-weight: bold;
+}
 
 .topnav {
     list-style-type: none;
@@ -40,11 +69,6 @@ body {
     float: right;
 }
 
-header, footer {
-    background-color: #000C7A;
-    color: #EBEDFF;
-}
-
 .bio img {
     height: 250px;
     border-radius: 50%;
@@ -67,32 +91,9 @@ header, footer {
     text-align: left;
 }
 
-section {
-    transition: 0.5s;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #E8F7FF;
-    border-radius: 50px;
-    color: #000C7A;
-    clear: both;
-    width: 40%;
-}
+/* Dark mode */
 
-footer {
-    padding: 10px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0px;
-}
-
-h1 {
-    font-family: "Montserrat", "Arial";
-    font-weight: bold;
-}
-
- .darkmode {
+.darkmode {
     background-color: rgb(12, 0, 66);
     color: #E8F7FF;
 }
@@ -102,37 +103,46 @@ body .darkmode {
     background-color: #131955;
 }
 
+/* Dark mode button */
+
 .dot{
+    transition: 0.5s;
     position: fixed;
     height: 30px;
     width: 30px;
-    background-color: #bbb;
+    background-color: #E8F7FF;
     border-radius: 50%;
     bottom: 50px;
     right: 20px;
     cursor: pointer;
-    box-shadow: 2px 2px 4px black;
+    box-shadow: 2px 2px 4px rgb(122, 122, 122);
+}
+
+.dot.darkmode{
+    background-color: #131955;
+    box-shadow: 2px 2px 4px rgb(15, 6, 56);
 }
 
 .center {
     margin: 5px;
 }
 
-@media screen and (max-width: 600px) {
-    .right, .topnav a, .topnav li {float: none;}
-    
-}
-
-@media screen and (max-width: 450px) {
-    footer p {margin: 10px;}
-    
-}
+/*Responsividade*/
 
 @media screen and (max-width: 1000px) {
     section {
         width: auto;
         margin: 25px;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .right, .topnav a, .topnav li {float: none;}
+}
+
+@media screen and (max-width: 450px) {
+    footer p {margin: 10px;}
+    
 }
 
 
@@ -169,14 +179,6 @@ body .darkmode {
     font-family: Montserrat;
     src: url(../assets/Montserrat-BoldItalic.ttf);
     src: url(../assets/Montserrat-BoldItalic.ttf) format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: Beyond;
-    src: url(../assets/beyond_the_mountains.ttf);
-    src: url(../assets/beyond_the_mountains.ttf) format('truetype');
     font-weight: bold;
     font-style: italic;
 }

@@ -62,6 +62,9 @@ function themeswitch(){
     const bio = pageBody.querySelector('.bio');
     const info = pageBody.querySelector('.info');
     const socialMedia = pageBody.querySelector('.socialmedia');
+    const dot = pageBody.querySelector('.dot');
+    const themeswitcher = pageBody.querySelector('#themeswitcher');
+
     const sections = pageBody.querySelectorAll('section');
     const portfolio = pageBody.querySelectorAll('.item-portfolio');
     
@@ -69,19 +72,23 @@ function themeswitch(){
     if(!document.getElementById('checkboxdarkmode').checked){
         pageBody.classList.add('darkmode');
         bio.classList.add('darkmode');
+        dot.classList.add('darkmode');
 
         if(sections != null){
+            themeswitcher.setAttribute('src', 'assets/light_moon.png');
             sections.forEach(section => {
                 section.classList.add('darkmode');
             });
         }        
 
         if(info != null){
+            themeswitcher.setAttribute('src', '../assets/light_moon.png');
             info.classList.add('darkmode');
             socialMedia.classList.add('darkmode');
         }
 
         if(portfolio != null){
+            themeswitcher.setAttribute('src', '../assets/light_moon.png');
             portfolio.forEach(div => {
                 div.classList.add('darkmode');
             });
@@ -90,19 +97,23 @@ function themeswitch(){
     }else{
         pageBody.classList.remove('darkmode');
         bio.classList.remove('darkmode');
+        dot.classList.remove('darkmode');
 
         if(sections != null){
+            themeswitcher.setAttribute('src', 'assets/NicePng_moon-png_60348.png');
             sections.forEach(section => {
                 section.classList.remove('darkmode');
             });
         }
 
         if(info != null){
+            themeswitcher.setAttribute('src', '../assets/NicePng_moon-png_60348.png');
             info.classList.remove('darkmode');
             socialMedia.classList.remove('darkmode');
         }
 
         if(portfolio != null){
+            themeswitcher.setAttribute('src', '../assets/NicePng_moon-png_60348.png');
             portfolio.forEach(div => {
                 div.classList.remove('darkmode');
             });
